@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-branca: #ffffff; /* Para Background Inicial */
+    --color-preta: #000000; /* Para títulos e letras */
+    --color-cinza: #cccccc;
+    --color-bege: #EADBC8; /* Para títulos e letras e detalhes;
+                                Contrasta com o branco */
+    --color-azul1: #A0E0FF;/* Botões e detalhes */
+    --color-azul2: #1C3D5A;/* Hover e detalhes */
+    --color-roxo: #2D124D;/* Hover e detalhes */
+    --color-azul_translucid: rgba(160, 224, 255, 0.5);
+    --color-cinza-translucid: rgba(204, 204, 204, 0.5);
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../assets/imagens/Gradiente_Suave.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+    min-height: 100vh;
+}
