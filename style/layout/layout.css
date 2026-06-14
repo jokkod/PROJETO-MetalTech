@@ -1,17 +1,43 @@
+/* Força o body a ocupar toda a altura da janela e centraliza o container real */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;     
+    justify-content: center;    
+    background-color: var(--color-azul_translucid)
+}
+
 .total-container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     flex-direction: row;
     width: 100%;
     max-width: 800px;
-    min-height: 100vh;
-    margin: 0 auto;
-    overflow: hidden;
 }
+
 main, aside {
     display: flex;
     width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .total-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%; 
+        max-width: 344px;
+    }
+
+    main, aside {
+        width: 100%;
+        flex-grow: 0;
+    }
 }

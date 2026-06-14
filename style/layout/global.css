@@ -15,8 +15,8 @@
     --color-azul1: #A0E0FF;/* Botões e detalhes */
     --color-azul2: #1C3D5A;/* Hover e detalhes */
     --color-roxo: #2D124D;/* Hover e detalhes */
-    --color-azul_translucid: rgba(160, 224, 255, 0.5);
-    --color-cinza-translucid: rgba(204, 204, 204, 0.5);
+    --color-azul_translucid: rgba(26, 38, 54, 0.85);;
+    --color-cinza_translucid: rgba(204, 204, 204, 0.5);
 }
 
 body {

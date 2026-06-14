@@ -1,11 +1,18 @@
 main > .container {
-    background-color: var(--color-azul_translucid);
+    background-color: rgba(26, 38, 54, 0.85);
     width: 100%;
-    min-height: 87.7vh;
-    padding-top: 5.7rem;
-    padding-left: 5rem;
+    height: 100%;
+    min-height: 100%;
+    padding-left: 5rem; 
+    padding-right: 1.5rem; 
     border-radius: 0 0 0 70px;
-
+    color: var(--color-bege);
+    border-left: 4px solid var(--color-bege);
+    border-bottom: 1px solid var(--color-bege);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.2rem;
 }
 
 .container .main__sub-title {
@@ -17,18 +24,40 @@ main > .container {
     font-weight: 500;
 }
 
-.btn-maker {
-    background-color: var(--color-azul2);
-    color: var(--color-bege);
-    border: 0;
+.btn-maker, .btn-history {
+    background-color: var(--color-azul1);
+    color: var(--color-azul2);
     border-radius: 7px;
-    padding: 0.4rem;
+    padding: 0.6rem 1rem;
+    display: inline-block;
 }
 
-.btn-history {
-    background-color: var(--color-azul2);
+.btn-maker:active, .btn-history:active {
+    background: var(--color-roxo);
     color: var(--color-bege);
-    border: 0;
-    border-radius: 7px;
-    padding: 0.4rem;
+    transform: scale(0.98);
+}
+
+/* @MEDIA QUERY PARA TELAS MENORES (Até 768px) */
+@media (max-width: 768px) {
+    main > .container {
+        width: 100%;
+        min-height: auto;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        padding-top: 2.5rem;       
+        
+        border-radius: 20px 0 20px 0;
+        border-top: 4px solid var(--color-bege);  
+        border-bottom: 4px solid var(--color-bege);
+        border-left: 4px solid var(--color-bege);
+        border-right: 4px solid var(--color-bege);   
+    }
+
+    .btn-maker, .btn-history {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }

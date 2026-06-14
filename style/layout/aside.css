@@ -1,11 +1,29 @@
 .aside-container {
-    background-color: var(--color-cinza-translucid);
+    background-color: var(--color-cinza_translucid);
+    border-left: 5px solid var(--color-bege);
+    border-top: 4px solid var(--color-bege);
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 0 20px 0 0;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .aside-container img {
     display: block;
     width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .aside-container {
+        display: none;
+    }
+
+    .aside-container img {
+        display: none;
+    }
 }
