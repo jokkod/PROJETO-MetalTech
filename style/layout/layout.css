@@ -1,11 +1,10 @@
-/* Força o body a ocupar toda a altura da janela e centraliza o container real */
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
-    align-items: center;     
-    justify-content: center;    
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-azul_translucid)
 }
 
@@ -18,7 +17,8 @@ body {
     max-width: 800px;
 }
 
-main, aside {
+main,
+aside {
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -32,12 +32,20 @@ main, aside {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90%; 
+        width: 90%;
         max-width: 344px;
     }
 
-    main, aside {
+    main,
+    aside {
         width: 100%;
         flex-grow: 0;
+    }
+}
+
+@media (min-width: 1325px) {
+    .total-container {
+        max-width: 1070px;
+        width: 90%;
     }
 }

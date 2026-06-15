@@ -8,7 +8,7 @@
 
 :root {
     --color-branca: #ffffff; /* Para Background Inicial */
-    --color-preta: #000000; /* Para títulos e letras */
+    --color-preta1: #000000; /* Para títulos e letras */
     --color-preta2: #0D1B2A;
     --color-bege: #EADBC8; /* Para títulos e letras e detalhes;
                                 Contrasta com o branco */
@@ -16,7 +16,7 @@
     --color-azul2: #1C3D5A;/* Hover e detalhes */
     --color-azul3: #1E88E5;
     --color-roxo: #2D124D;/* Hover e detalhes */
-    --color-azul_translucid: rgba(26, 38, 54, 0.85);;
+    --color-azul_translucid: rgba(26, 38, 54, 0.85);
     --color-cinza_translucid: rgba(204, 204, 204, 0.5);
 }
 

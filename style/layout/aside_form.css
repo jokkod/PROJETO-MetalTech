@@ -1,0 +1,53 @@
+.description-container {
+    background: #132238 url('../../assets/imagens/Abstract_Blue.jpg');
+    /* background-size: contain; */
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+    color: var(--color-azul1);
+    gap: 0.2rem;
+}
+
+.decription__text {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.decription__text:hover {
+    transform: scale(1.02);
+}
+
+.description-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-right: 10rem;
+    padding-bottom: 0.4rem;
+    transition: transform 0.3s ease;
+}
+
+.description-container img:hover,
+.description-container img:active {
+    transform: scale(1.07);
+}
+
+
+@media (max-width: 768px) {
+    .description-container {
+        display: none;
+    }
+
+    .description-container img {
+        display: none;
+    }
+}

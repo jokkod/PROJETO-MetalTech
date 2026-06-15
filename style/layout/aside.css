@@ -16,6 +16,11 @@
     width: 95%;
     height: auto;
     margin: 0 auto;
+    transition: 0.5s ease-out;
+}
+
+.aside-container img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
